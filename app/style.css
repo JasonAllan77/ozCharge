@@ -1,0 +1,9 @@
+body {
+    max-width: 800px;
+    font-family: fantasy, Arial;
+    background: #228b22;
+    /* background: #b0c4de; */
+    color: #ffd700;
+    margin: 0 auto;
+    text-align: center;
+}
