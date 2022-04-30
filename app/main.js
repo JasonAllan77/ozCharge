@@ -10,12 +10,22 @@ console.log("Hello World!");
 
 const url = "https://api.openchargemap.io/v3/poi/";
 
+function displayMapData(responseData) {
+    debugger;
+}
+
+function waitForResponse(response) {
+    return response.json();
+}
+
 function fetchMapData() {
     const location = "Melbourne";
     const apiKeyOCM = process.env.OCM_API_KEY;
     const units = 2;
     const queryString = `?key=${apiKeyOCM}&Site=${location}`;
-    console.log(queryString);
+    fetch(url + queryString)
+        .then(waitForResponse)
+        .then(displayMapData);
 }
 
 fetchMapData();
