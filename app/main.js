@@ -11,6 +11,7 @@ console.log("Hello World!");
 const url = "https://api.openchargemap.io/v3/poi/";
 
 function displayMapData(responseData) {
+    console.log("This ran");
     debugger;
 }
 
