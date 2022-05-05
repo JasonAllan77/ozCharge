@@ -8,6 +8,8 @@ I don't own a Tesla or any other Electric Car, I drive a 1991 VE Commodore Omega
 
 This Charging Station App will answer the question of locating these charging stations in relation to your location via a map based API.
 
+OzCharge is for exclusive use in Australia.
+
 ## Walkthrough of the Code
 
 -   Technologies Used
@@ -21,6 +23,6 @@ Parcel
 ## Things Learned
 
 -   Things not covered in class
--   Ne w Technology
+-   New Technology
 
 ## What's Next?
