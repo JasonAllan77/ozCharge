@@ -23,10 +23,71 @@
             <button id="find-me">Show my location</button><br />
             <p id="status"></p>
             <a id="map-link" target="_blank"></a>
+
+            <!-- Select Type of Station Drop Down List -->
+            <div class="typeOfStation">
+                <br />
+                <label for="select-type">Type of Station:</label>
+                <select name="class" id="select-type">
+                    <option value="">Please select a Station Type</option>
+                    <option value="type-public">Public</option>
+                    <option value="type-private">Private</option>
+                    <option value="type-membership">Membership Required</option>
+                    <option value="type-all">All</option>
+                </select>
+                <button type="button" onclick="filterByType()">
+                    Display Stations
+                </button>
+            </div>
+
+            <!-- Select Distance by Radius Drop Down List -->
+            <div class="distanceByRadius">
+                <br />
+                <label for="select-radius">Select Search Radius:</label>
+                <select name="class" id="select-radius">
+                    <option value="">Please select a Search Radius</option>
+                    <option value="radius-5km">5km</option>
+                    <option value="radius-10km">10km</option>
+                    <option value="radius-15km">15km</option>
+                    <option value="radius-20km">20km</option>
+                    <option value="radius-25km">25km</option>
+                    <option value="radius-30km">30km</option>
+                    <option value="radius-35km">35km</option>
+                    <option value="radius-40km">40km</option>
+                    <option value="radius-45km">45km</option>
+                    <option value="radius-50km">50km</option>
+                    <option value="radius-75km">75km</option>
+                    <option value="radius-100km">100km</option>
+                    <option value="radius-150km">150km</option>
+                    <option value="radius-200km">200km</option>
+                    <option value="radius-250km">250km</option>
+                    <option value="radius-500km">500km</option>
+                    <option value="radius-1000km">1000km</option>
+                </select>
+                <button type="button" onclick="filterByRadius()">
+                    Display Stations
+                </button>
+            </div>
         </form>
         <div id="output"></div>
 
         <div id="client"></div>
+
+        <!-- Credits -->
+        <text align="left">
+            <h6><a href="#top">Return to the Top of the Page</a></h6>
+        </text>
+        <center>
+            <h6>
+                OzCharge App created by Jason Allan for JavaScript Development -
+                General Assembly May 2022<br />
+                Mobile: 0419 895 241, Email:
+                <a href="mailto:getmappedaus@gmail.com"
+                    >getmappedaus@gmail.com</a
+                >
+            </h6>
+        </center>
+
         <script src="main.js" type="module"></script>
     </body>
 </html>

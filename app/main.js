@@ -1,5 +1,7 @@
 import geoFindMe from "./findme";
 import fetchMapData from "./fetchData";
+import filterByType from "./filterType";
+import filterByRadius from "./filterRadius";
 // import { displayMapData, waitForResponse, fetchMapData } from "./fetchdata";
 
 console.log("Hello World!");
@@ -11,6 +13,12 @@ geoFindMe();
 // displayMapData();
 // waitForResponse();
 fetchMapData();
+
+// Search by Type Function
+filterByType();
+
+// Search by Radius Function
+filterByRadius();
 
 // console.log(data);
 // console.log(apiKeyOCM);
