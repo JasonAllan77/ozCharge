@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 const url = "https://api.openchargemap.io/v3/poi/";
 
 // Base URL - https://api.openchargemap.io/v3/poi

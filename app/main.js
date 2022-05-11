@@ -1,4 +1,3 @@
-import "dotenv/config";
 import geoFindMe from "./findme";
 import fetchMapData from "./fetchData";
 // import { displayMapData, waitForResponse, fetchMapData } from "./fetchdata";
