@@ -6,11 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>OzCharge App</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-aewsome.min.css">
     </head>
+
+    <!--  Navigation Menu -->
+    <!-- <nav> -->
+
+    <!-- </nav> -->
+
     <body>
+        <br>
         <h1>OzCharge App</h1>
 
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#map">Map</a>
+            <a href="#cars">Electric Cars</a>
+            <a href="#types">Charging Stations</a>
+            <a href="#contact">Contact</a>
+            <a href="#help">Help</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </div>
+
         <form>
+            <br>
             <!-- required text -->
             <input
                 required="required"
@@ -73,7 +94,12 @@
 
         <div id="client"></div>
 
-        <!-- Credits -->
+        <script src="main.js" type="module"></script>
+    </body>
+
+    <!-- Credits -->
+    <footer>
+        <div class="credits">
         <text align="left">
             <h6><a href="#top">Return to the Top of the Page</a></h6>
         </text>
@@ -87,7 +113,6 @@
                 >
             </h6>
         </center>
-
-        <script src="main.js" type="module"></script>
-    </body>
+        </div>
+    </footer>
 </html>

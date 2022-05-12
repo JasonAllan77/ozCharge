@@ -2,6 +2,8 @@ import geoFindMe from "./findme";
 import fetchMapData from "./fetchData";
 import filterByType from "./filterType";
 import filterByRadius from "./filterRadius";
+import myFunction from "./navHamburger";
+
 // import { displayMapData, waitForResponse, fetchMapData } from "./fetchdata";
 
 console.log("Hello World!");
@@ -19,6 +21,9 @@ filterByType();
 
 // Search by Radius Function
 filterByRadius();
+
+// Navigation Bar Function
+myFunction();
 
 // console.log(data);
 // console.log(apiKeyOCM);
