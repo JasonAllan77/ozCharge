@@ -4,7 +4,7 @@ body {
     /* background: #228b22; */
     background-image: linear-gradient(#228b22, #ffd700);
     background-size: auto;
-    height: 600px;
+    height: auto;
     position: relative;
     background-repeat: no-repeat;
     /* background: #b0c4de; */
@@ -13,10 +13,24 @@ body {
     text-align: center;
 }
 
+h3 {
+    text-align: left;
+}
+
+h4 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    font-size: 12px;
+}
+
 /* Navigation Bar */
 .topnav {
     background-color: #000000;
     overflow: hidden;
+    justify-content: center;
 }
 
 /* Navigation Links */
@@ -47,14 +61,9 @@ body {
     display: none;
 }
 
-/* Credits */
-.credits {
-    color: black;
-}
-
 /*  Max Screen Width */
 @media screen and (max-width: 600px) {
-    .topnav a.not(:first-child) {
+    .topnav a:not(:first-child) {
         display: none;
     }
     .topnav a.icon {
@@ -77,4 +86,90 @@ body {
         display: block;
         text-align: left;
     }
+}
+
+/* Columns - Setting */
+.column {
+    float: left;
+    padding: 5px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+/* Columns - Left */
+.column.left {
+    width: 65%;
+}
+
+/* Columns - Right */
+.column.right {
+    width: 25%;
+}
+
+/* Columns - Mobile Responsive*/
+@media screen and (max-width: 600px) {
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+}
+
+/* Credits */
+/* .credits {
+    color: black;
+} */
+
+/* Clear Floats After the Columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Grid - Main Content - List of Stations */
+/* .content {
+    grid-area: main;
+} */
+
+/* Grid - Side Bar on Left - Selected Station Details */
+/* .sidebar {
+    grid-area: sd;
+} */
+
+/* Footer - Credits */
+.footer {
+    /* background-color: blue; */
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+#wrapper {
+    display: grid;
+    justify-content: center;
+    background-color: #f1f1f1f1;
+    padding: 5px;
+    grid-template-columns: 60% 40%;
+    /* grid-template-columns: repeat(2, 90px); */
+    grid-auto-rows: minmax(100px, auto);
+    /* grid-auto-rows: 50px; */
+    grid-gap: 5px;
+    width: 600px;
+    /* grid-template-areas:
+        "main sd"
+        "main sd"; */
+}
+
+.tall {
+    grid-row: 1 / 6;
+    grid-column: 2 / 3;
+    padding: 10px;
+    /* width: 25%; */
+}
+
+.block {
+    background-color: #000000;
+    padding: 10px;
 }
